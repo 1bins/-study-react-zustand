@@ -1,5 +1,10 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
+/*
+  Devtools 사용법
+  import { devtools } from 'zustand/middleware'
+  create( devtools ( persist() ) )으로 감싼다.
+ */
 
 const dataStore = create(
     persist(
